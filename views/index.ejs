@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ระบบเช็คชื่อ</title>
+</head>
+<body>
+    <h1>ระบบเช็คชื่อ</h1>
+    <form action="attendance.ejs" method="POST">
+        <input type="text" name="name" placeholder="ชื่อ" required>
+        <input type="date" name="date" required>
+        <label for="status">มาเรียน</label>
+        <input type="checkbox" name="status">
+        <label for="status">ไม่มาเรียน</label>
+        <input type="checkbox" name="status">
+        <button type="submit">บันทึก</button>
+    </form>
+    <a href="attendance.ejs">ดูบันทึกเช็คชื่อ</a>
+</body>
+</html>
